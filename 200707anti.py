@@ -29,7 +29,7 @@ class Mydataset(Dataset):
         self.path = path
         if is_train: self.img = os.listdir(self.path)[:1000]
         else: self.img = os.listdir(self.path)[1001:]
-        try: self.img.remove('3bnfnd.png')
+        
         except: pass
         self.transform = transform
         
